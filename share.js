@@ -44,8 +44,9 @@ function openSocial(e, website) {
     case 'twitter':
       e.preventDefault();
       e.stopPropagation();
-      var title = 'Watch Sundance selected animated short Black Holes & help fund Season 1';
-      openURL('http://twitter.com/share?text=' + title + '&url=' + encodeURIComponent(KS_URL));
+      var title = 'Watch Sundance selected animated short Black Holes & help fund Season 1 @sundancefest';
+      title = encodeURIComponent(title);
+      openURL('http://twitter.com/share?text=' + title + '&related=blackholesfilm&url=' + encodeURIComponent(KS_URL));
       break;
     
     case 'ks':
