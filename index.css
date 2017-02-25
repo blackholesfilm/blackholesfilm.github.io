@@ -1,0 +1,136 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: url('img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: #E8E6E6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #d03c00;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, .8);
+  box-shadow: 0 0 3px black;
+  border-radius: 8px;
+}
+
+.welcome {
+  font-size: 14px;
+}
+
+.progress > .progress-bar {
+  width: 1%;
+  background: white;
+  height: 100%;
+  height: 22px;
+}
+
+.progress > .progress-bar > .percentage {
+  -ms-transform: translateX(calc(100% + 4px));
+  transform: translateX(calc(100% + 4px));
+}
+
+.progress > .progress-bar > .percentage.-full {
+  transform: none;
+  margin-right: 10px;
+  color: black;
+  text-align: right;
+}
+
+.share-blocks {
+  display: flex;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .share-blocks {
+    flex-direction: column;
+  }
+  
+  .share-blocks > .share-block {
+    margin-top: 30px !important;
+  }
+}
+
+.share-blocks > .share-block {
+  flex: 1;
+  text-align: center;
+  margin: 0 14px;
+}
+
+.share-blocks > .share-block > h4 {
+  margin: 0;
+  color: #d03c00;
+}
+
+.share-blocks > .share-block > span {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.8;
+  min-height: 4em;
+}
+
+.share-blocks > .share-block > div {
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-blocks > .share-block .button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 14px;
+  outline: 0;
+  border: 0;
+  border-radius: 6px;
+  background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.share-blocks > .share-block .button:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+}
+
+.share-blocks > .share-block .button.-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.share-blocks > .share-block .button.-twitter {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.share-blocks > .share-block .button.-ks {
+  background-color: #53de6b;
+  color: black;
+}
